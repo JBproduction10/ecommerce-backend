@@ -1,6 +1,6 @@
 // require on top sendgrid setup
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey(process.env.SENDGRIDAPIKEY);
 
 
 const { Order, CartItem } = require("../models/order");
